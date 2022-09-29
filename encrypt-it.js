@@ -25,10 +25,11 @@
   // entire program in the init function, for similar reasons that
   // you shouldn't write an entire Java program in the main method).
   
-  function handleClick(){
-	console.log("Click detected!");
-	  
-  }
 
 })();
 
+
+function handleClick(){
+console.log("Click detected!");
+  
+}
