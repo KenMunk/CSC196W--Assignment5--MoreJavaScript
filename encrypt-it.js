@@ -31,7 +31,7 @@
 		var textContent = document.getElementById("input-text").value;
 		console.log(textContent +"");
 		var resultContent = "";
-		for(int i = 0; i<textContent.length; i++){
+		for(let i = 0; i<textContent.length; i++){
 			resultContent = resultContent + String.fromCharCode(shiftCharacterCode(textContent.charCodeAt(i));
 		};
 		document.getElementById("result").innerHTML = resultContent;
