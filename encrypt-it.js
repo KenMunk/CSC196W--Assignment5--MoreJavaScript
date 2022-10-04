@@ -56,7 +56,7 @@
 		}
 		else if(subjectCharacter+shiftValue >= 65 && subjectCharacter <=90){
 			if(shiftedValue > 90){
-				return((shiftedValue%91)65);
+				return((shiftedValue % 91 ) + 65);
 			}
 			else{
 				return(shiftedValue);
@@ -65,7 +65,7 @@
 		}
 		else if(subjectCharacter >= 97 && subjectCharacter <=122){
 			if(shiftedValue > 122){
-				return((shiftedValue%123)97);
+				return((shiftedValue%123)+97);
 			}
 			else{
 				return(shiftedValue);
