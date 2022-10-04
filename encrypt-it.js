@@ -33,7 +33,7 @@
 		var resultContent = "";
 		for(int i = 0; i<textContent.length; i++){
 			resultContent = resultContent + String.fromCharCode(shiftCharacterCode(textContent.charCodeAt(i));
-		}
+		};
 		document.getElementById("result").innerHTML = resultContent;
 	};
 	
