@@ -19,6 +19,7 @@
     // for UI elements on the page.
 	console.log("Window loaded!");
 	document.getElementById("encrypt-it").addEventListener("click", handleClick);
+	document.getElementById("result").innerHTML = "";
   }
 
   // Add any other functions in this area (you should not implement your
@@ -29,6 +30,45 @@
 		console.log("Click detected!");
 		var textContent = document.getElementById("input-text").value;
 		console.log(textContent +"");
+		var resultContent = "";
+		for(int i = 0; i<textContent.length; i++){
+			resultContent = resultContent + String.fromCharCode(shiftCharacterCode(textContent.charCodeAt(i));
+		}
+		document.getElementById("result").innerHTML = resultContent;
+	};
+	
+	function shiftCharacterCode(subjectCharacter){
+		
+		if(subjectCharacter >= 48 && subjectCharacter <=57){
+			if(subjectCharacter == 57){
+				return(48);
+			}
+			else{
+				return(subjectCharacter+1);
+			}
+		}
+		else if(subjectCharacter >= 65 && subjectCharacter <=90){
+			if(subjectCharacter == 90){
+				return(65);
+			}
+			else{
+				return(subjectCharacter+1);
+			}
+
+		}
+		else if(subjectCharacter >= 97 && subjectCharacter <=122){
+			if(subjectCharacter == 122){
+				return(97);
+			}
+			else{
+				return(subjectCharacter+1);
+			}
+			
+		}
+		else{
+			return(subjectCharacter);
+		}
+		
 	};
 
 })();
