@@ -32,7 +32,7 @@
 		console.log(textContent +"");
 		var resultContent = "";
 		for(let i = 0; i<textContent.length; i++){
-			resultContent = resultContent + String.fromCharCode(shiftCharacterCode(textContent.charCodeAt(i));
+			resultContent = resultContent + String.fromCharCode(shiftCharacterCode(textContent.charCodeAt(i)));
 		};
 		document.getElementById("result").innerHTML = resultContent;
 	};
