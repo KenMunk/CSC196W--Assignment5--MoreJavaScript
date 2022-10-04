@@ -38,30 +38,37 @@
 	};
 	
 	function shiftCharacterCode(subjectCharacter){
+		var shiftValue = 1;
+		
+		if(document.getElementById("cipher-type").value == "random"){
+			shiftValue = Math.random() * 26;
+		}
+		
+		var shiftedValue = subjectCharacter+shiftValue;
 		
 		if(subjectCharacter >= 48 && subjectCharacter <=57){
-			if(subjectCharacter == 57){
-				return(48);
+			if(shiftedValue > 57){
+				return((shiftedValue%58)+48);
 			}
 			else{
-				return(subjectCharacter+1);
+				return(shiftedValue);
 			}
 		}
-		else if(subjectCharacter >= 65 && subjectCharacter <=90){
-			if(subjectCharacter == 90){
-				return(65);
+		else if(subjectCharacter+shiftValue >= 65 && subjectCharacter <=90){
+			if(shiftedValue > 90){
+				return((shiftedValue%91)65);
 			}
 			else{
-				return(subjectCharacter+1);
+				return(shiftedValue);
 			}
 
 		}
 		else if(subjectCharacter >= 97 && subjectCharacter <=122){
-			if(subjectCharacter == 122){
-				return(97);
+			if(shiftedValue > 122){
+				return((shiftedValue%123)97);
 			}
 			else{
-				return(subjectCharacter+1);
+				return(shiftedValue);
 			}
 			
 		}
