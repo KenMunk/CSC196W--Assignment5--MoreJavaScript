@@ -27,8 +27,8 @@
   
 	function handleClick(){
 		console.log("Click detected!");
-		var textContent = document.getElementById("input-text").textContent;
-		console.log(textContent.text +"");
+		var textContent = document.getElementById("input-text").value;
+		console.log(textContent +"");
 	};
 
 })();
