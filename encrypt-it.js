@@ -26,8 +26,9 @@
   // you shouldn't write an entire Java program in the main method).
   
 	function handleClick(){
-	console.log("Click detected!");
-	  
+		console.log("Click detected!");
+		var textContent = document.getElementById("input-text").textContent;
+		console.log(textContent);
 	};
 
 })();
