@@ -10,7 +10,6 @@
    * on the page. When this event occurs, the attached function (init) will be called.
    */
   window.addEventListener("load", init);
-  document.getElementById("encrypt-it").addEventListener("click", handleClick);
 
   /**
    * TODO: Write a function comment using JSDoc.
@@ -19,6 +18,7 @@
     // Note: In this function, we usually want to set up our event handlers
     // for UI elements on the page.
 	console.log("Window loaded!");
+	document.getElementById("encrypt-it").addEventListener("click", handleClick);
   }
 
   // Add any other functions in this area (you should not implement your
