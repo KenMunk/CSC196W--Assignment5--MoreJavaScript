@@ -10,7 +10,7 @@
    * on the page. When this event occurs, the attached function (init) will be called.
    */
   window.addEventListener("load", init);
-  document.getElementById("encrypt-it").onclick = function() {handleClick()};
+  document.getElementById("encrypt-it").onclick = handleClick;
 
   /**
    * TODO: Write a function comment using JSDoc.
@@ -32,4 +32,4 @@
 function handleClick(){
 console.log("Click detected!");
   
-}
+};
