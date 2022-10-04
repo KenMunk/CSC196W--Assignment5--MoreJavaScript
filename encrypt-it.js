@@ -48,7 +48,7 @@
 		
 		if(subjectCharacter >= 48 && subjectCharacter <=57){
 			if(shiftedValue > 57){
-				return((shiftedValue%58)+48);
+				return(((shiftedValue%58)%10)+48);
 			}
 			else{
 				return(shiftedValue);
