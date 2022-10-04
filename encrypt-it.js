@@ -40,7 +40,7 @@
 	function shiftCharacterCode(subjectCharacter){
 		var shiftValue = 1;
 		
-		if(document.getElementById("cipher-type").value == "random"){
+		if(document.getElementById("cipher-type").value === "random"){
 			shiftValue = Math.random() * 26;
 		}
 		
